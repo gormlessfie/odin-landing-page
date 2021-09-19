@@ -1,0 +1,180 @@
+
+@font-face {
+    font-family: Hero;
+    src: url("../fonts/hero-regular-webfont.woff") format('woff');
+}
+
+body {
+    font-family: 'Hero', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1, h2 {
+    flex: 1 1 auto;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.header {
+    display: flex;
+    background-color: #1F2937;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 30px 300px 50px 300px;
+    color: white;
+}
+
+.header-top {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: auto;
+    width: 50px;
+}
+
+.logo-text {
+    font-size: 24px;
+}
+
+.logo-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header-links {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-content-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 700px;
+}
+
+.header-para {
+    min-width: 300px;
+    max-width: 700px;
+}
+
+.header-img-container {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+.header-img {
+    max-height: auto;
+    max-width: 500px;
+}
+
+.button-container {
+    display: flex;
+    flex: 0 1 auto;
+}
+
+.header-button {
+    min-width: 100px;
+    min-height: 50px;
+    justify-content: center;
+    align-content: center;
+    background-color: royalblue;
+    color: white;
+    border: 1px solid white;
+}
+
+.content {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+}
+
+.information-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.information-content-container {
+    display: flex;
+    flex: 1 1 0;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+
+.info {
+    display: flex;
+    flex-flow: column;
+    min-width: 50px;
+    max-width: 300px;
+}
+
+.info-pic {
+    max-height: auto;
+    width: 300px;
+    border: 5px solid teal;
+    border-radius: 30px;
+}
+
+.info-para {
+    font-family: 'Hero', sans-serif;
+    font-size: 18px;
+
+    width: 300px;
+    
+}
+
+.quote-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #E5E7EB;
+}
+
+.quote-content {
+    max-width: 500px;
+    font-style: italic;
+}
+
+.quote {
+    font-size: 36px;
+}
+
+.quote-footer-content {
+    display: flex;
+    justify-content: right;
+    font-size: 24px;
+}
+
+
+.footer {
+    background-color: #1F2937;
+}
