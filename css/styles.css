@@ -6,9 +6,6 @@
 
 body {
     font-family: 'Hero', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 ul {
@@ -23,9 +20,13 @@ a{
 }
 
 h1, h2 {
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     font-size: 48px;
     font-weight: 700;
+}
+
+img {
+    max-width: 100%;
 }
 
 .header {
@@ -33,7 +34,7 @@ h1, h2 {
     background-color: #1F2937;
     flex: 1 1 auto;
     flex-direction: column;
-    padding: 30px 300px 50px 300px;
+    padding: 0 300px 30px;
     color: white;
 }
 
@@ -69,31 +70,23 @@ h1, h2 {
 
 .header-content-container {
     display: flex;
-    justify-content: space-around;
+    flex: 1 1 auto;
+    gap: 36px;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-content {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
-    min-width: 300px;
-    max-width: 700px;
-}
-
-.header-para {
-    min-width: 300px;
+    min-width: 0px;
     max-width: 700px;
 }
 
 .header-img-container {
     display: flex;
     flex: 1 1 auto;
-    justify-content: center;
-}
-
-.header-img {
-    max-height: auto;
-    max-width: 500px;
 }
 
 .button-container {
@@ -113,7 +106,6 @@ h1, h2 {
 
 .content {
     display: flex;
-    height: 500px;
     flex-direction: column;
 }
 
@@ -175,6 +167,18 @@ h1, h2 {
 }
 
 
+
 .footer {
+    display: flex;
+    flex: 1;
     background-color: #1F2937;
+    max-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.footer-text {
+    color: white;
+    font-size: 18px;
 }
