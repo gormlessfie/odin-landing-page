@@ -1,7 +1,9 @@
 
 @font-face {
     font-family: Hero;
-    src: url("../fonts/hero-regular-webfont.woff") format('woff');
+    src: url("../fonts/hero-regular-webfont.woff") format('woff'),
+         url("../fonts/hero-light-webfont.woff") format('woff'),
+         url("../fonts/hero-bold-webfont.woff") format('woff');
 }
 
 body {
@@ -20,7 +22,7 @@ a{
 }
 
 h1, h2 {
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     font-size: 48px;
     font-weight: 700;
 }
@@ -34,7 +36,7 @@ img {
     background-color: #1F2937;
     flex: 1 1 auto;
     flex-direction: column;
-    padding: 0 300px 30px;
+    padding: 0 200px 30px;
     color: white;
 }
 
@@ -71,9 +73,15 @@ img {
 .header-content-container {
     display: flex;
     flex: 1 1 auto;
-    gap: 36px;
     align-items: center;
     justify-content: center;
+}
+
+.header-img-container {
+    display: flex;
+    flex: 0 1 auto;
+    width: 100%;
+    height: 100%;
 }
 
 .header-content {
@@ -82,11 +90,6 @@ img {
     flex-direction: column;
     min-width: 0px;
     max-width: 700px;
-}
-
-.header-img-container {
-    display: flex;
-    flex: 1 1 auto;
 }
 
 .button-container {
@@ -166,11 +169,45 @@ img {
     font-size: 24px;
 }
 
+.action-container {
+    display: flex;
+    padding: 100px 500px;
+    justify-content: center;
+    align-items: center;
+}
 
-
-.footer {
+.action-content {
     display: flex;
     flex: 1;
+    padding: 50px;
+    background-color: #3882F6;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.action-button-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-button {
+    background-color: #3882F6;
+    border-radius: 10px;
+    color: white;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+}
+.footer {
+    display: flex;
+    flex: 1 1 auto;
     background-color: #1F2937;
     max-height: 100px;
     justify-content: space-between;
